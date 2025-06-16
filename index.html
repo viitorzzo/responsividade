@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Digital - Soluções Inovadoras</title>
+    <meta name="description" content="Transforme seu negócio com soluções digitais inovadoras. Desenvolvimento web, apps mobile e marketing digital.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232563eb'/><text y='70' font-size='70' fill='white'>N</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-cube"></i>
+                <span>Nexus Digital</span>
+            </div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Menu principal">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cube" aria-hidden="true"></i>
+                <span>Nexus Digital</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Início</a></li>
+                <li role="none"><a href="#services" class="nav-link" role="menuitem">Serviços</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">Sobre</a></li>
+                <li role="none"><a href="#portfolio" class="nav-link" role="menuitem">Portfolio</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema escuro/claro">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" role="button" tabindex="0">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" role="banner">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <h1 class="hero-title">
+                        Transforme seu <span class="gradient-text">negócio</span> 
+                        com soluções digitais inovadoras
+                    </h1>
+                    <p class="hero-description">
+                        Desenvolvemos estratégias digitais personalizadas que impulsionam 
+                        o crescimento da sua empresa no mundo digital.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')" aria-label="Iniciar projeto">
+                            <span>Começar Agora</span>
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('services')" aria-label="Ver nossos serviços">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                            <span>Ver Serviços</span>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Clientes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Anos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="hero-visual">
+                        <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            <span>+150% ROI</span>
+                        </div>
+                        <div class="floating-card card-2" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            <span>500+ Clientes</span>
+                        </div>
+                        <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="600">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                            <span>24/7 Suporte</span>
+                        </div>
+                        <div class="hero-graphic">
+                            <div class="graphic-element element-1"></div>
+                            <div class="graphic-element element-2"></div>
+                            <div class="graphic-element element-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-shapes" aria-hidden="true">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" role="main">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">
+                    Oferecemos soluções completas para acelerar seu crescimento digital
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites e aplicações web modernas, responsivas e otimizadas para performance máxima.</p>
+                    <ul class="service-features">
+                        <li>React & Next.js</li>
+                        <li>Design Responsivo</li>
+                        <li>SEO Otimizado</li>
+                        <li>Performance A+</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">A partir de</span>
+                        <span class="price-value">R$ 2.500</span>
+                    </div>
+                    <button class="service-btn" onclick="openServiceModal('web')">Saiba Mais</button>
+                </div>
+
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-badge">Mais Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Aplicativos Mobile</h3>
+                    <p>Apps nativos e híbridos para iOS e Android com experiência excepcional do usuário.</p>
+                    <ul class="service-features">
+                        <li>React Native</li>
+                        <li>UI/UX Design</li>
+                        <li>Integração API</li>
+                        <li>App Store Deploy</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">A partir de</span>
+                        <span class="price-value">R$ 5.000</span>
+                    </div>
+                    <button class="service-btn" onclick="openServiceModal('mobile')">Saiba Mais</button>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Estratégias de marketing digital para aumentar sua presença online e conversões.</p>
+                    <ul class="service-features">
+                        <li>SEO & SEM</li>
+                        <li>Social Media</li>
+                        <li>Analytics</li>
+                        <li>Automação</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">A partir de</span>
+                        <span class="price-value">R$ 1.500</span>
+                    </div>
+                    <button class="service-btn" onclick="openServiceModal('marketing')">Saiba Mais</button>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-palette" aria-hidden="true"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Design de interfaces intuitivas e experiências de usuário que convertem visitantes em clientes.</p>
+                    <ul class="service-features">
+                        <li>Design System</li>
+                        <li>Prototipagem</li>
+                        <li>User Research</li>
+                        <li>Testes A/B</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-from">A partir de</span>
+                        <span class="price-value">R$ 2.000</span>
+                    </div>
+                    <button class="service-btn" onclick="openServiceModal('design')">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" role="region" aria-labelledby="process-title">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 id="process-title" class="section-title">Nosso Processo</h2>
+                <p class="section-subtitle">
+                    Metodologia comprovada para entregar resultados excepcionais
+                </p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Descoberta</h3>
+                        <p>Entendemos seu negócio, objetivos e desafios para criar a estratégia perfeita.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Planejamento</h3>
+                        <p>Desenvolvemos um roadmap detalhado com cronograma e marcos bem definidos.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Desenvolvimento</h3>
+                        <p>Executamos o projeto com metodologia ágil e comunicação transparente.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Entrega</h3>
+                        <p>Lançamos sua solução e fornecemos suporte contínuo para garantir o sucesso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" role="region" aria-labelledby="stats-title">
+        <div class="container">
+            <h2 id="stats-title" class="sr-only">Estatísticas da empresa</h2>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                    </div>
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Projetos Concluídos</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
+                    </div>
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Clientes Satisfeitos</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-headset" aria-hidden="true"></i>
+                    </div>
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Suporte 24/7</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" role="region" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 id="about-title">Por que escolher a Nexus Digital?</h2>
+                    <p>
+                        Somos uma equipe apaixonada por tecnologia e inovação, dedicada a 
+                        transformar ideias em soluções digitais de alto impacto que geram resultados reais.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Expertise em tecnologias modernas</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Metodologia ágil e transparente</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Suporte contínuo pós-entrega</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Resultados mensuráveis e ROI comprovado</span>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                            Fale Conosco
+                        </button>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <div class="tech-stack">
+                            <div class="tech-item">React</div>
+                            <div class="tech-item">Node.js</div>
+                            <div class="tech-item">Python</div>
+                            <div class="tech-item">AWS</div>
+                            <div class="tech-item">Docker</div>
+                            <div class="tech-item">MongoDB</div>
+                        </div>
+                        <div class="about-graphic">
+                            <div class="graphic-circle circle-1"></div>
+                            <div class="graphic-circle circle-2"></div>
+                            <div class="graphic-circle circle-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio" role="region" aria-labelledby="portfolio-title">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 id="portfolio-title" class="section-title">Projetos em Destaque</h2>
+                <p class="section-subtitle">
+                    Conheça alguns dos nossos trabalhos mais recentes e impactantes
+                </p>
+            </div>
+            <div class="portfolio-filter" role="tablist" aria-label="Filtros de portfolio">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+                <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+                <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+                <button class="filter-btn" data-filter="design" role="tab" aria-selected="false">Design</button>
+            </div>
+            <div class="portfolio-grid" role="tabpanel">
+                <div class="portfolio-item" data-category="web" data-aos="fade-up">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>E-commerce Platform</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Platform</h3>
+                            <p>Plataforma completa de vendas online com dashboard administrativo</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <button class="portfolio-link" aria-label="Ver detalhes do projeto">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button>
+                                <button class="portfolio-link" aria-label="Visitar site">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Fitness App</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Fitness App</h3>
+                            <p>Aplicativo de treinos personalizados com IA</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">AI/ML</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <button class="portfolio-link" aria-label="Ver detalhes do projeto">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button>
+                                <button class="portfolio-link" aria-label="Baixar app">
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-palette"></i>
+                            <span>Brand Identity</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Identidade visual completa para startup de tecnologia</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Branding</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Motion</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <button class="portfolio-link" aria-label="Ver detalhes do projeto">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button>
+                                <button class="portfolio-link" aria-label="Ver case study">
+                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                            <span>SaaS Dashboard</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>SaaS Dashboard</h3>
+                            <p>Dashboard analítico para gestão de dados empresariais</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">D3.js</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <button class="portfolio-link" aria-label="Ver detalhes do projeto">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button>
+                                <button class="portfolio-link" aria-label="Demo ao vivo">
+                                    <i class="fas fa-play" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta" data-aos="fade-up">
+                <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                    Ver Todos os Projetos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" role="region" aria-labelledby="testimonials-title">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 id="testimonials-title" class="section-title">O que nossos clientes dizem</h2>
+                <p class="section-subtitle">
+                    Depoimentos reais de clientes que transformaram seus negócios conosco
+                </p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <div class="testimonial-item active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                "A Nexus Digital transformou completamente nossa presença digital. 
+                                O resultado superou todas as expectativas e nosso faturamento aumentou 300%!"
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <div class="avatar-placeholder">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Maria Silva</h4>
+                                    <span>CEO, TechStart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                "Profissionais excepcionais! Entregaram o projeto no prazo e 
+                                com qualidade superior ao esperado. Recomendo sem hesitar."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <div class="avatar-placeholder">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <h4>João Santos</h4>
+                                    <span>Diretor, InnovaCorp</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                "O app que desenvolveram revolucionou nossa operação. 
+                                Interface intuitiva e performance impecável. Parceria de longo prazo!"
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <div class="avatar-placeholder">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Ana Costa</h4>
+                                    <span>Fundadora, LogiTech</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="nav-dot active" onclick="showTestimonial(0)" aria-label="Ver depoimento 1"></button>
+                    <button class="nav-dot" onclick="showTestimonial(1)" aria-label="Ver depoimento 2"></button>
+                    <button class="nav-dot" onclick="showTestimonial(2)" aria-label="Ver depoimento 3"></button>
+                </div>
+                <div class="testimonials-controls">
+                    <button class="testimonial-btn prev" onclick="prevTestimonial()" aria-label="Depoimento anterior">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="testimonial-btn next" onclick="nextTestimonial()" aria-label="Próximo depoimento">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" role="region" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2 id="contact-title">Vamos conversar sobre seu projeto?</h2>
+                    <p>
+                        Entre em contato conosco e descubra como podemos ajudar 
+                        sua empresa a alcançar novos patamares no mundo digital.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Telefone</span>
+                                <span class="contact-value">+55 (11) 99999-9999</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">contato@nexusdigital.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Localização</span>
+                                <span class="contact-value">São Paulo, SP - Brasil</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Horário</span>
+                                <span class="contact-value">Seg - Sex: 9h às 18h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/nexusdigital" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/nexusdigital" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/nexusdigital" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/nexusdigital" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/5511999999999" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Nome completo</label>
+                                <input type="text" id="name" name="name" placeholder="Nome completo *" required aria-required="true">
+                                <span class="form-error" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Seu email *" required aria-required="true">
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="sr-only">Telefone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Seu telefone">
+                                <span class="form-error" id="phone-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="service" class="sr-only">Serviço de interesse</label>
+                                <select id="service" name="service" required aria-required="true">
+                                    <option value="">Selecione um serviço *</option>
+                                    <option value="web">Desenvolvimento Web</option>
+                                    <option value="mobile">Aplicativo Mobile</option>
+                                    <option value="marketing">Marketing Digital</option>
+                                    <option value="design">UI/UX Design</option>
+                                    <option value="consultoria">Consultoria</option>
+                                </select>
+                                <span class="form-error" id="service-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget" class="sr-only">Orçamento estimado</label>
+                            <select id="budget" name="budget">
+                                <option value="">Orçamento estimado</option>
+                                <option value="5k">Até R$ 5.000</option>
+                                <option value="10k">R$ 5.000 - R$ 10.000</option>
+                                <option value="25k">R$ 10.000 - R$ 25.000</option>
+                                <option value="50k">R$ 25.000 - R$ 50.000</option>
+                                <option value="50k+">Acima de R$ 50.000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Conte-nos sobre seu projeto *" rows="5" required aria-required="true"></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="privacy" name="privacy" required aria-required="true">
+                                <span class="checkmark"></span>
+                                Aceito os <a href="javascript:void(0)" onclick="showNotification('Política de privacidade em desenvolvimento', 'info')">termos de privacidade</a> *
+                            </label>
+                            <span class="form-error" id="privacy-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span class="btn-text">Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cube" aria-hidden="true"></i>
+                        <span>Nexus Digital</span>
+                    </div>
+                    <p>
+                        Transformando ideias em soluções digitais inovadoras 
+                        que impulsionam o sucesso dos nossos clientes.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/company/nexusdigital" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/nexusdigital" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/nexusdigital" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/nexusdigital" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#services">Desenvolvimento Web</a></li>
+                        <li><a href="#services">Aplicativos Mobile</a></li>
+                        <li><a href="#services">Marketing Digital</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="javascript:void(0)" onclick="showNotification('Página em desenvolvimento', 'info')">Carreiras</a></li>
+                        <li><a href="javascript:void(0)" onclick="showNotification('Blog em desenvolvimento', 'info')">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>+55 (11) 99999-9999</li>
+                        <li>contato@nexusdigital.com</li>
+                        <li>São Paulo, SP - Brasil</li>
+                        <li>Seg - Sex: 9h às 18h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Nexus Digital. Todos os direitos reservados.</p>
+                    <div class="footer-links">
+                        <a href="javascript:void(0)" onclick="showNotification('Política de privacidade em desenvolvimento', 'info')">Política de Privacidade</a>
+                        <a href="javascript:void(0)" onclick="showNotification('Termos de uso em desenvolvimento', 'info')">Termos de Uso</a>
+                        <a href="javascript:void(0)" onclick="showNotification('Política de cookies em desenvolvimento', 'info')">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div class="modal" id="service-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Detalhes do Serviço</h3>
+                <button class="modal-close" onclick="closeServiceModal()" aria-label="Fechar modal">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
